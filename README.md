@@ -1,3 +1,4 @@
+SAKSHAM JAIN-2427030737   PRIYANSHI SHARMA-2427030746
 # Game-Theoretic Spectrum Sharing Simulator for 5G/6G Networks
 
 [![Python](https://img.shields.io/badge/Python-≥3.10-blue.svg)](https://www.python.org/)

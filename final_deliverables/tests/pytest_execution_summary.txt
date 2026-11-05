@@ -1,0 +1,25 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.10.19, pytest-9.1.1, pluggy-1.7.0 -- /Users/sakshamjain/Desktop/untitled folder/.venv/bin/python3.10
+cachedir: .pytest_cache
+rootdir: /Users/sakshamjain/Desktop/untitled folder
+configfile: pytest.ini
+testpaths: tests
+collecting ... collected 15 items
+
+tests/test_baselines.py::test_random_baseline_pair_count_matches_theory PASSED [  6%]
+tests/test_baselines.py::test_round_robin_properties PASSED              [ 13%]
+tests/test_baselines.py::test_exhaustive_search_finds_global_optimum PASSED [ 20%]
+tests/test_channel.py::test_pl0_formula PASSED                           [ 26%]
+tests/test_channel.py::test_single_user_sinr_equals_snr PASSED           [ 33%]
+tests/test_channel.py::test_noise_power_calculation PASSED               [ 40%]
+tests/test_channel.py::test_interference_matrix_symmetry PASSED          [ 46%]
+tests/test_game.py::test_k1_no_moves PASSED                              [ 53%]
+tests/test_game.py::test_verify_ne_passes_on_100_percent_of_g1_runs PASSED [ 60%]
+tests/test_game.py::test_channel_relabel_invariance PASSED               [ 66%]
+tests/test_potential.py::test_potential_identity PASSED                  [ 73%]
+tests/test_potential.py::test_phi_monotone_non_decreasing PASSED         [ 80%]
+tests/test_potential.py::test_brute_force_local_optimum_on_small_instances PASSED [ 86%]
+tests/test_reproducibility.py::test_same_seed_gives_identical_results PASSED [ 93%]
+tests/test_reproducibility.py::test_jain_index_properties PASSED         [100%]
+
+============================== 15 passed in 0.68s ==============================

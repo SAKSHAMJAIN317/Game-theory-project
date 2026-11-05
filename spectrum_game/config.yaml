@@ -1,0 +1,39 @@
+# Configuration for Game-Theoretic Spectrum Sharing Simulator
+
+system:
+  N: 20                  # Number of transmitter-receiver links
+  L: 300.0               # Side length of square deployment area (meters)
+  K: 4                   # Number of orthogonal channels
+  B: 20.0e+6             # Channel bandwidth in Hz (20 MHz)
+  f_c: 3.5e+9            # Carrier frequency in Hz (3.5 GHz)
+  c: 3.0e+8              # Speed of light in m/s
+  P_dBm: 23.0            # Transmitter power in dBm
+  NF_dB: 7.0             # Receiver noise figure in dB
+  n_pathloss: 3.5        # Path loss exponent
+  sigma_shadowing: 6.0   # Shadow fading std dev in dB
+  rx_dist_min: 10.0      # Min distance from Tx to Rx (meters)
+  rx_dist_max: 40.0      # Max distance from Tx to Rx (meters)
+
+game:
+  tol: 1.0e-9            # Minimum utility improvement to switch channels
+  max_rounds: 100        # Maximum sequential best response rounds
+
+baselines:
+  random_draws: 50       # Number of random allocations to average
+
+experiments:
+  num_topologies: 100    # Topologies per experiment (seeds 0-99)
+  demo_seed: 42
+  e2_n_values: [10, 20, 30, 40, 50]
+  e3_k_values: [2, 3, 4, 5, 6, 8]
+  e4_n: 8
+  e4_k: 3
+  e5_n_values: [2.5, 3.5, 4.5]
+  e5_sigma_values: [0.0, 6.0, 8.0]
+  e6_run_g2: true
+
+paths:
+  raw_csv: "results/raw_csv"
+  figures: "results/figures"
+  tables: "results/tables"
+  logs: "results/logs"
